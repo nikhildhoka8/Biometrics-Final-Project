@@ -12,7 +12,7 @@ This application utilizes the face_recognition library to perform face detection
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nikhildhoka8/Biometrics-Final-Project.git
    ```
 
 2. **Install the required packages:**
@@ -39,4 +39,4 @@ This application utilizes the face_recognition library to perform face detection
 ---
 
 ### Note:
-Make sure to replace `<repository-url>` with the actual URL of your Git repository where this code will be hosted. This README.md file is designed to be placed in the root of your project directory. Ensure that all software dependencies are appropriately credited and that usage instructions are clear for end users.
+Make sure to replace `https://github.com/nikhildhoka8/Biometrics-Final-Project.git` with the actual URL of your Git repository where this code will be hosted. This README.md file is designed to be placed in the root of your project directory. Ensure that all software dependencies are appropriately credited and that usage instructions are clear for end users.
