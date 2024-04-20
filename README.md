@@ -37,6 +37,3 @@ This application utilizes the face_recognition library to perform face detection
 - **Streamlit:** An open-source app framework for Machine Learning and Data Science projects. [Official site](https://streamlit.io/).
 
 ---
-
-### Note:
-Make sure to replace `https://github.com/nikhildhoka8/Biometrics-Final-Project.git` with the actual URL of your Git repository where this code will be hosted. This README.md file is designed to be placed in the root of your project directory. Ensure that all software dependencies are appropriately credited and that usage instructions are clear for end users.
