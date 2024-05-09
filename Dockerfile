@@ -12,21 +12,30 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxext6 \
     libxrender-dev \
     libglib2.0-0 \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy the current directory contents into the container at /app
+# Copy the wheel and other contents into the container at /app
 COPY . /app
 
-# Install any needed packages specified in requirements.txt
-RUN pip install  -r requirements.txt
+# List contents of /app for debugging
+RUN ls -la /app
+
+# Check architecture and install wheel conditionally
+RUN if [ "$(uname -m)" = "x86_64" ]; then \
+        pip install -r requirements-amd64.txt; \
+    else \
+        pip install -r requirements-arm64.txt; \
+    fi
 
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+# HEALTHCHECK to ensure the app is running
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
 
 # Define environment variable
 ENV NAME World
 
 # Run app.py when the container launches
-ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=localhost"]
