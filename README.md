@@ -17,7 +17,7 @@ This application can also be viewed online at the following URL: [CNN Face Recog
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/nikhildhoka8/Biometrics-Final-Project.git
+   git clone https://github.com/nikhildhoka8/CNN-Face-Recognition.git
    ```
 
 2. **Install the required packages:**
