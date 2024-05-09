@@ -8,6 +8,11 @@ This application utilizes the face_recognition library to perform face detection
 - **Insert New Person:** Add a person's name and their face encoding to the database.
 - **Check If Person Exists:** Check an uploaded image against the database to see if the person is already recognized.
 
+## Live Access
+
+This application can also be viewed online at the following URL: [CNN Face Recognition App](https://cnn-face-recognition-app.streamlit.app).
+
+
 ## Installation
 
 1. **Clone the repository:**
