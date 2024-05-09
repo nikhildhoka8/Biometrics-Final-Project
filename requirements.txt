@@ -1,6 +1,6 @@
 streamlit
 cmake
-dlib_bin-19.24.2.post1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+./dlib_bin-19.24.2.post1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 face_recognition
 numpy
 Pillow
